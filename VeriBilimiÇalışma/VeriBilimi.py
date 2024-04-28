@@ -71,7 +71,7 @@ def heatmap_corelation_matrix(correlation_matrix: pd.DataFrame):
     sns.heatmap(correlation_matrix, annot = True, cmap = 'coolwarm', fmt = ".2f")
     plt.title('Kolerasyon Matrisi')
     plt.show()
-file_path = 'exams.csv'
+file_path = 'electric_vehicle_population_data.csv'
 dataset = read_dataset(file_path)
 correlation_matrix = calculate_correlation_matrix(dataset)
 heatmap_corelation_matrix(correlation_matrix)
