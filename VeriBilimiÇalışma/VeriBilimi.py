@@ -23,7 +23,7 @@ def calculate_correlation_matrix(df: pd.DataFrame) -> pd.DataFrame:
     correlation_matrix = df_encoded.corr()
 return correlation_matrix
 
-veri_seti = pd.read_csv('exams.csv')
+veri_seti = pd.read_csv('electric_vehicle_population_data.csv')
 korelasyon_matrisi = calculate_correlation_matrix(veri_seti)
 print('Kolerasyo Matrisi:')
 print(korelasyon_matrisi)
